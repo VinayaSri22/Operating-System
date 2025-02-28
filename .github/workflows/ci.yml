@@ -10,8 +10,6 @@ concurrency:
 jobs:
   Mike-Deploy:
     runs-on: ubuntu-22.04
-    permissions:
-      write-all: true
     steps:
       - uses: actions/checkout@v3
         with:
