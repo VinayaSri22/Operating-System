@@ -3,7 +3,7 @@ site_url: https://github.com/VinayaSri22/Operating-System-Notes/
 site_author: Vinaya Sri Gangavarapu
 site_description: >-
   Notes and learning materials for Operating Systems, based on the Neso Academy course.
-github_repo: https://github.com/VinayaSri22/Operating-System
+repo_url: https://github.com/VinayaSri22/Operating-System
 
 theme:
   name: material

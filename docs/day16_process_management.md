@@ -1,5 +1,3 @@
-Here are the key notes on Operating System Process Management using Markdown formatting:
-
 # Operating System Process Management
 
 ## Processes

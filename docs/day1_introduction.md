@@ -1,4 +1,4 @@
-# Operating Systems - Core Concepts
+# Operating Systems 
 
 ## 1. Introduction to Operating System
 - Software that manages hardware and software resources
