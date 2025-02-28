@@ -1,0 +1,123 @@
+site_name: Operating System Notes
+site_url: https://github.com/VinayaSri22/Operating-System-Notes/
+site_author: Vinaya Sri Gangavarapu
+site_description: >-
+  Notes and learning materials for Operating Systems, based on the Neso Academy course.
+github_repo: https://github.com/VinayaSri22/Operating-System
+
+theme:
+  name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - navigation.path
+    - content.tooltips
+  palette:
+    - scheme: default
+      primary: brown
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: dark blue
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - mike
+  - search:
+      position: navbar
+
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/regular/envelope
+      name: Email
+      link: mailto:gangavarapuvinayasri14@gmail.com
+    - icon: fontawesome/brands/youtube
+      name: Neso Academy OS Course
+      link: https://www.youtube.com/playlist?list=PLBlnK6fEyqRiVhbXDGLXDk_OQAeuVcp2O
+
+docs_dir: docs/
+nav:
+  - Introduction: index.md
+
+  - OS Concepts:
+    - Basics of OS: day2_basics_of_os.md
+    - Storage Structure: day3_storage_structure.md
+    - IO Devices: day4_IO_devices.md
+    - CS Architecture: day5_cs_architechture.md
+    - OS Structure: day6_os_structure.md
+    - OS Services: day7_os_services.md
+    - User OS Interface: day8_user_os_interface.md
+    - System Call: day9_system_call.md
+    - System Call Types: day10_system_call_types.md
+    - System Program: day11_system_program.md
+    - OS Design Implementation: day12_OS_Design_Implementation.md
+    - Structure of OS: day13_structure_of_OS.md
+    - Virtual Machine: day14_virtual_machine.md
+    - OS Generation: day15_os_generation.md
+
+  - Process Management:
+    - Process Management: day16_process_management.md
+    - Process State: day17_process_state.md
+    - Process Control Block: day18_process_control_block.md
+    - Process Scheduling: day19_process_scheduling.md
+    - Context Switch: day20_context_switch.md
+    - Process Creation: day21_process_creation.md
+    - Process Management 5: day22_process_management_5.md
+    - Process Termination: day22_process_termination.md
+
+  - IPC:
+    - IPC: day23_ipc.md
+    - Shared Memory Systems: day24_shared_memory_systems.md
+    - Message Parsing System Part 1: day25_message_parsing_system_part1.md
+    - Message Parsing System Part 2: day26_message_parsing_system_part2.md
+    - Message Parsing System Part 3: day27_message_parsing_system_part3.md
+    - Sockets: day28_sockets.md
+    - RPC: day29_rpc.md
+    - Issue with RPC: day30_issue_with_rpc.md
+
+  - Threads:
+    - Threads: day31_threads.md
+    - Multithreading and Hyperthreading Model: day32_multithreading_and_hyperthreading_model.md
+    - System Call Fork Exec: day33_system_call_fork_exec.md
+    - Threading Issues: day34_threading_issues.md
+    - Thread Cancelation: day35_thread_cancelation.md
+
+  - CPU Scheduling:
+    - CPU Scheduling: day36_cpu_scheduling.md
+    - Burst Cycles: day37_burst_cycles.md
+    - Preemptive Scheduling: day38_preemptive_scheduling.md
+    - Scheduling Criteria: day39_scheduling_criteria.md
+    - FCFS: day40_fcfs.md
+    - SJFS: day43_sjfs.md
+    - Priority Scheduling: day46_priority_scheduling.md
+    - Round Robin Scheduling: day49_round_robin_scheduling.md
+    - Multi Level Queue Scheduling: day53_multi_level_queue_scheduling.md
+    - Multi Level Feedback Queue: day54_multi_level_feedback_queue.md
+
+  - Process Synchronization:
+    - Process Synchronization: day56_process_synchronization.md
+    - Critical Section: day57_critical_section.md
+    - Peterson Solution: day58_peterson_solution.md
+    - Test and Set Lock: day59_test_and_set_lock.md
+    - Semaphores: day60_semaphores.md
+    - Disadvantages of Semaphores: day61_disadvantages_of_semaphores.md
+    - Monitors: day65_monitors.md
+
+  - Advanced:
+    - DeadLock: Advanced/1_DeadLock.md
+    - Main Memory: Advanced/2_Main_Memory.md
+    - Virtual Memory: Advanced/3_Virtual_Memory.md
+    - File System: Advanced/4_File_System.md
+    - File System Implementation: Advanced/5_File_System_Implementation.md
+    - Mass Storage Structure: Advanced/6_Mass_Storage_Structure.md
