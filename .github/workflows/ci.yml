@@ -1,0 +1,39 @@
+name: 'Docs'
+on:
+  release:
+    types: [published]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  Mike-Deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      write-all: true
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.8'
+
+      - name: prepare
+        run: sh ./prepare.sh
+
+      - name: Git Config
+        run: |
+          git config user.name VinayaSri22
+          git config user.email gangavarapuvinayasri14@gmail.com
+
+      - name: Mike Deploy
+        run: |
+          mike list
+          mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
+
+      - name: Mike Set Default
+        run: mike set-default --push latest
